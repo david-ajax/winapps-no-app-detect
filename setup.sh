@@ -1153,7 +1153,6 @@ function waFindInstalled() {
         source "./apps/${APPLICATION}/info"
 
         # Append commands to batch file.
-        echo "IF EXIST \"${WIN_EXECUTABLE}\" ECHO ${APPLICATION} >> ${TMP_INST_FILE_PATH_WIN}" >>"$BATCH_SCRIPT_PATH"
     done
 
     # Append a command to the batch script to run the PowerShell script and store its output in the 'detected' file.
