@@ -1266,7 +1266,8 @@ Comment=Microsoft Windows RDP Session"
 
     # Print feedback.
     echo -e "${DONE_TEXT}Done!${CLEAR_TEXT}"
-    echo "" > ~/.local/share/winapps/detected
+    rm -rf ~/.local/share/winapps/detected
+    cp ~/detected ~/.local/share/winapps/
 }
 
 # Name: 'waConfigureApp'
